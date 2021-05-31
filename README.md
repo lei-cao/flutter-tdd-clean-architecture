@@ -14,3 +14,27 @@ Dependency inversion principle is the last of the SOLID principles. It basically
 2. [Part 3](https://resocoder.com/2019/09/02/flutter-tdd-clean-architecture-course-3-domain-layer-refactoring/)
 
 - **call()** a method named call can be run both by calling object.call() but also by object()? That's the perfect method to use in the Use Cases! After all, their class names are already verbs like GetConcreteNumberTrivia, so using them as "fake methods" fits perfectly.
+
+3. [Part 6](https://resocoder.com/2019/09/19/flutter-tdd-clean-architecture-course-6-repository-implementation/)
+
+- [**Future**](https://stackoverflow.com/questions/18423691/dart-how-to-create-a-future-to-return-in-your-own-functions)
+```
+@override
+Future<Either<Failure, NumberTrivia>> getConcreteNumberTrivia(int number) {
+    networkInfo.isConnected;
+    var completer = new Completer<Either<Failure, NumberTrivia>>();
+
+    ServerFailure serverFailure = ServerFailure();
+    completer.complete(Left(serverFailure));
+
+    return completer.future;
+}
+```
+
+```
+@override
+Future<Either<Failure, NumberTrivia>> getConcreteNumberTrivia(int number) async {
+    networkInfo.isConnected;
+    return Left(ServerFailure());
+}
+```
