@@ -11,3 +11,6 @@ Homework of Flutter TDD Clean Architecture Course
 Dependency inversion principle is the last of the SOLID principles. It basically states that the boundaries between layers should be handled with interfaces (abstract classes in Dart).
 
 
+2. [Part 3](https://resocoder.com/2019/09/02/flutter-tdd-clean-architecture-course-3-domain-layer-refactoring/)
+
+- **call()** a method named call can be run both by calling object.call() but also by object()? That's the perfect method to use in the Use Cases! After all, their class names are already verbs like GetConcreteNumberTrivia, so using them as "fake methods" fits perfectly.
