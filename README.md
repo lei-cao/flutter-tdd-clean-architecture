@@ -39,7 +39,10 @@ Future<Either<Failure, NumberTrivia>> getConcreteNumberTrivia(int number) async 
 }
 ```
 
-4. [Part 7]()
+4. [Part 7](https://resocoder.com/2019/09/23/flutter-tdd-clean-architecture-course-7-network-info/)
 
 - testing passing result: using same reference `expect(result, tHasConnectionFuture);`
  
+5. [Part 8](https://resocoder.com/2019/09/26/flutter-tdd-clean-architecture-course-8-local-data-source/)
+
+- use `any()` in mocktail instead of `any`
