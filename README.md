@@ -38,3 +38,8 @@ Future<Either<Failure, NumberTrivia>> getConcreteNumberTrivia(int number) async 
     return Left(ServerFailure());
 }
 ```
+
+4. [Part 7]()
+
+- testing passing result: using same reference `expect(result, tHasConnectionFuture);`
+ 
