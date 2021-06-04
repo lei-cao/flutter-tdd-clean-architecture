@@ -46,3 +46,8 @@ Future<Either<Failure, NumberTrivia>> getConcreteNumberTrivia(int number) async 
 5. [Part 8](https://resocoder.com/2019/09/26/flutter-tdd-clean-architecture-course-8-local-data-source/)
 
 - use `any()` in mocktail instead of `any`
+
+6. [Part 9](https://resocoder.com/2019/10/03/flutter-tdd-clean-architecture-course-9-remote-data-source/)
+
+- Mocking http/Uri [registerFallbackValue](https://github.com/felangel/mocktail/issues/44
+)
