@@ -51,3 +51,12 @@ Future<Either<Failure, NumberTrivia>> getConcreteNumberTrivia(int number) async 
 
 - Mocking http/Uri [registerFallbackValue](https://github.com/felangel/mocktail/issues/44
 )
+
+7. [Part 11](https://resocoder.com/2019/10/10/flutter-tdd-clean-architecture-course-11-bloc-implementation/)
+
+- We await `untilCalled()` because the logic inside a Bloc is triggered through a Stream<Event> which is, of course, asynchronous itself. Had we not awaited until the stringToUnsignedInteger has been called, the verification would always fail​, since we'd verify before the code had a chance to execute.
+
+8. [Part 12](https://resocoder.com/2019/10/14/flutter-tdd-clean-architecture-course-11-bloc-implementation-2-2/)
+
+- Use `bloc.stream` instead of neither `bloc.state` nor `bloc`
+- Missing emitting `Empty()`, why?
